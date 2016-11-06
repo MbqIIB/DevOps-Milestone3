@@ -27,7 +27,6 @@ https://github.com/shivamgulati1991/climbing-grade
 5. Test run a build - Go to Jobs and click "Build Now". 
 
 
-
 #### The ability to deploy software to the production environment triggered after build, testing, and analysis stage is completed. The deployment needs to occur on actual remote machine/VM (e.g. AWS, droplet, VCL), and not a local VM.
    
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/1.gif)
@@ -58,6 +57,5 @@ Sources:
 
 1. https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins
 2. https://github.com/Grantismo/climbing-grade.js
-3. https://github.com/CSC-DevOps/Complexity
-4. https://github.com/CSC-DevOps/TestGeneration
-5. https://github.com/danielstjules/jsinspect
+3. https://github.com/CSC-DevOps/Queues
+4. https://github.com/CSC-DevOps/Deployment
