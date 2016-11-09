@@ -38,6 +38,10 @@ As a service provider, we have used Digital Ocean and we set up droplets for fol
 
 
 #### The ability to configure a production environment automatically, including all infrastructure components, such web server, app service, load balancers, and redis stores. Configure should be accopmlished by using a configuration management tool, such as ansible, or docker. Alternatively, a cluster management approach could also work (e.g., kubernates).
+
+For this we used the learning from homeworks and workshops, and setup the environment automatically using script to create Digital Ocean droplet and installing dependencies and requirements using Ansible playbook. The steps we followed:
+
+1. Run the do.js script which creates a Digital Ocean droplet and writes the IP address of the same to the inventory file
    
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/1.gif)
 
