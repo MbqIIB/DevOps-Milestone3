@@ -59,3 +59,4 @@ Sources:
 2. https://github.com/Grantismo/climbing-grade.js
 3. https://github.com/CSC-DevOps/Queues
 4. https://github.com/CSC-DevOps/Deployment
+5. https://code.tutsplus.com/tutorials/setting-up-continuous-integration-continuous-deployment-with-jenkins--cms-21511
