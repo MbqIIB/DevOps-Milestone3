@@ -33,6 +33,17 @@ As a service provider, we have used Digital Ocean and we set up droplets for fol
 
 #### The ability to deploy software to the production environment triggered after build, testing, and analysis stage is completed. The deployment needs to occur on actual remote machine/VM (e.g. AWS, droplet, VCL), and not a local VM.
 
+We used Digital Ocean droplets for this task. Droplet 1 maintains the Jenkins build server and droplet 2 has the production environment.
+
+1. Create a Jenkins job for this task.
+2. Build, test and analysis is performed as same as done in Milestone 2.
+3. Login to github.com and your project repository. From settings, set GitHub web hook URL as below.
+```
+
+```
+
+4. Setups keys
+5. In the execute build section of Jenkins job, write the below shell script further to deploy the successful changes to the production server.
 
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/1.gif)
 
@@ -45,11 +56,15 @@ For this we used the learning from homeworks and workshops, and setup the enviro
 ```
 node do.js
 ```
+
 2. It might take a short while for the server to be provisioned.
 3. After that is done, run the Ansible command which consumes the inventory file and reads the playbook.yml rules to automatically provision the requirements.
+
 ```
 ansible-playbook -i inventory playbook.yml
 ```
+
+4. The playbook sets up all the requirements and provisions them to the server to make it ready as needed. 
    
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/1.gif)
 
