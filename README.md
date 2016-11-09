@@ -42,6 +42,9 @@ As a service provider, we have used Digital Ocean and we set up droplets for fol
 For this we used the learning from homeworks and workshops, and setup the environment automatically using script to create Digital Ocean droplet and installing dependencies and requirements using Ansible playbook. The steps we followed:
 
 1. Run the do.js script which creates a Digital Ocean droplet and writes the IP address of the same to the inventory file.
+```
+node do.js
+```
 2. It might take a short while for the server to be provisioned.
 3. After that is done, run the Ansible command which consumes the inventory file and reads the playbook.yml rules to automatically provision the requirements.
 ```
