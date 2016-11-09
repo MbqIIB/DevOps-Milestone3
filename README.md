@@ -14,9 +14,13 @@ We used the MIT licensed Climbing-Grade project which is forked at
 ```
 https://github.com/shivamgulati1991/climbing-grade
 ```
+As a service provider, we have used Digital Ocean and we set up droplets for following:
+
+1. Droplet which has Jenkins build server, Redis cache ....
+2. Droplet which acts as a stable production server
+3. Canary.....
 
 #### Jenkins Job Creation Steps
-
 
 1. Create a new job. Give it a name. Choose Freestyle Project.
 2. For configuration of Job
@@ -28,7 +32,8 @@ https://github.com/shivamgulati1991/climbing-grade
 
 
 #### The ability to deploy software to the production environment triggered after build, testing, and analysis stage is completed. The deployment needs to occur on actual remote machine/VM (e.g. AWS, droplet, VCL), and not a local VM.
-   
+
+
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/1.gif)
 
 
@@ -37,10 +42,12 @@ https://github.com/shivamgulati1991/climbing-grade
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/1.gif)
 
 #### The ability to monitor the deployed application (using at least 2 metrics) and send alerts using email or SMS (e.g., smtp, mandrill, twilio). An alert can be sent based on some predefined rule.  
-We are using Twilio service to send the SMS when an alert is raised. Twilio has extended their API for Node.js such that
-we could oncorporate it in our application. We are monotoring CPU usage and triggering an alert as soon as the 
-monotoring code detects a spike in the CPU usage value above 60%. As a second metric, we are also keeping track of the 
-memory usage. We are triggering the alert on a threshold of 90% memory usage.
+
+We are using Twilio service to send the SMS when an alert is raised. Twilio's Node.js has been incorporate in our application. 
+For the metrics, we chose the below two criteria:
+
+1. CPU usage - Alert would be triggered when the code detects a spike in CPU usage above 60%
+2. High memory usage -  Alert would be triggered on high memory usage exceeding a predefined threshold of 90%.
    
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/1.gif)
 
