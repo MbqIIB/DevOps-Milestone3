@@ -56,6 +56,8 @@ ssh root@<IP address> <<EOF
 EOF
 ```
 
+6. This would complete the build and if successful, deploy the code on stable production server.
+
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/1.gif)
 
 
