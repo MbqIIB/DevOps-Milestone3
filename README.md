@@ -37,13 +37,24 @@ We used Digital Ocean droplets for this task. Droplet 1 maintains the Jenkins bu
 
 1. Create a Jenkins job for this task.
 2. Build, test and analysis is performed as same as done in Milestone 2.
-3. Login to github.com and your project repository. From settings, set GitHub web hook URL as below.
+3. Login to github.com and your project repository. From settings, go to Integration and Services.
+4. Click on Add Service and select Jenkins (GitHub plugin).
+5. Add the URL for the jenkins box in the URL box
+```
+http://<Droplet IP>/github-webhook/
 ```
 
+4. For the keys, add the public ssh key of the droplet to authorized_keys of the stable production Server. This allows Jenkins to ssh into the server and deploy the new code after build.
+5. In the execute build section of Jenkins job, write the below shell script further to deploy the successful changes to the production server. You can also write this as a script and call the script in the action.
 ```
-
-4. Setups keys
-5. In the execute build section of Jenkins job, write the below shell script further to deploy the successful changes to the production server.
+ssh root@<IP address> <<EOF
+  cd ~/m3base
+  git pull
+  npm install --production
+  forever restartall
+  exit
+EOF
+```
 
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/1.gif)
 
