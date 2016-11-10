@@ -14,11 +14,11 @@ We used the MIT licensed Climbing-Grade project which is forked at
 ```
 https://github.com/shivamgulati1991/climbing-grade
 ```
-As a service provider, we have used Digital Ocean and we set up droplets for following:
+As a service provider, we have used Digital Ocean and set up droplets for following:
 
-1. Droplet which has Jenkins build server, Redis cache ....
+1. Droplet which has Jenkins build server and other infrastructure configrations
 2. Droplet which acts as a stable production server
-3. Canary.....
+3. Droplet which acts as canary server
 
 #### Jenkins Job Creation Steps
 
@@ -88,8 +88,24 @@ For the metrics, we chose the below two criteria:
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/1.gif)
 
 #### The ability to perform a canary release: Using a proxy/load balancer server, route a percentage of traffic to a newly staged version of software and remaining traffic to a stable version of software. Stop routing traffic to canary if alert is raised.
-   
+
+1. We run the main code on a droplet.
+```
+node <filename.js>
+```
+
+2. We start the proxy server which also displays messages how our requests are routed to the production and the other canary server.
+```
+node proxy.js
+```
+
+3. We route the traffi as 67% to stable server and 33% to canary. Simply, every 3rd request is sent the Canary server.
+4. We use CPU memory usage to trigger alert and stopping the canary. When the limit exceeds the utlization of 85%, the requests to canary are stopped and all further requests are only sent to production.
+
+Screencast for traffic routing
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/6_1.gif)
+
+Screencast for stopping Canary on alert
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/6_2.gif)
 
 
