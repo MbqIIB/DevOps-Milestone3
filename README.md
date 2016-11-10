@@ -77,7 +77,7 @@ For the metrics, we chose the below two criteria:
 2. High memory usage -  Alert would be triggered on high memory usage exceeding a predefined threshold of 90%.
    
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/3_1.gif)
-![Screenshot](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/3_2.jpeg | width=100)
+![Screenshot](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/3_2.jpeg =250x)
 
 #### The ability to autoscale individual components of production and maintain and track in a central discovery service. Autoscale can be triggered by a predefined rule.
    
