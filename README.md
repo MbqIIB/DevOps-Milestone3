@@ -79,9 +79,11 @@ For the metrics, we chose the below two criteria:
 Our file alert.js monitors the service and sends an alert message on phone as well as a console output.
 
 Screencast for alert message
+
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/3_1.gif)
 
 Alerts recieved on phone
+
 ![Screenshot](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/3_2.jpg)
 
 #### The ability to autoscale individual components of production and maintain and track in a central discovery service. Autoscale can be triggered by a predefined rule.
@@ -108,9 +110,11 @@ node proxy.js
 4. We use CPU memory usage to trigger alert and stopping the canary. When the limit exceeds the utlization of 85%, the requests to canary are stopped and all further requests are only sent to production.
 
 Screencast for traffic routing
+
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/6_1.gif)
 
 Screencast for stopping Canary on alert
+
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/6_2.gif)
 
 
