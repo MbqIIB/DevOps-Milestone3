@@ -76,7 +76,8 @@ For the metrics, we chose the below two criteria:
 1. CPU usage - Alert would be triggered when the code detects a spike in CPU usage above 60%
 2. High memory usage -  Alert would be triggered on high memory usage exceeding a predefined threshold of 90%.
    
-![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/1.gif)
+![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/3_1.gif)
+![Screenshot](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/3_2.jpg)
 
 #### The ability to autoscale individual components of production and maintain and track in a central discovery service. Autoscale can be triggered by a predefined rule.
    
@@ -88,7 +89,8 @@ For the metrics, we chose the below two criteria:
 
 #### The ability to perform a canary release: Using a proxy/load balancer server, route a percentage of traffic to a newly staged version of software and remaining traffic to a stable version of software. Stop routing traffic to canary if alert is raised.
    
-![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/1.gif)
+![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/6_1.gif)
+![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/6_2.gif)
 
 
 Sources:
