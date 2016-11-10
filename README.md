@@ -104,8 +104,23 @@ Alerts recieved on phone
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/1.gif)
 
 #### The ability to use feature flags, serviced by a global redis store, to toggle functionality of a deployed feature in production.
-   
-![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/1.gif)
+
+We used a redis-key value server as a global store to maintain the feature flag. This feature can be enabled or disabled using the redis-cli.
+
+1. We have toggled the functioning of one of our feature Meow which displays the images or shows 'No images to show'.
+2. When the key is set ON this, feature is enabled and would work as above. To turn it ON, type below in redis-cli
+```
+SET mykey ON
+```
+
+mykey is the variable which would either be OFF or ON.
+
+3. When the key is set OFF this, feature is disabled and will display “Sorry! This functionality is disabled right now.”. To turn it OFF, type below in redi-cli
+```
+SET mykey OFF
+```
+
+![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/5.gif)
 
 #### The ability to perform a canary release: Using a proxy/load balancer server, route a percentage of traffic to a newly staged version of software and remaining traffic to a stable version of software. Stop routing traffic to canary if alert is raised.
 
