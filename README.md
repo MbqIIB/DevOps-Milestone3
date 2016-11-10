@@ -79,7 +79,7 @@ ansible-playbook -i inventory playbook.yml
 
 4. The playbook sets up all the requirements and provisions them to the server to make it ready as needed. 
    
-![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/1.gif)
+![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/2.gif)
 
 #### The ability to monitor the deployed application (using at least 2 metrics) and send alerts using email or SMS (e.g., smtp, mandrill, twilio). An alert can be sent based on some predefined rule.  
 
