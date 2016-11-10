@@ -70,13 +70,18 @@ ansible-playbook -i inventory playbook.yml
 
 #### The ability to monitor the deployed application (using at least 2 metrics) and send alerts using email or SMS (e.g., smtp, mandrill, twilio). An alert can be sent based on some predefined rule.  
 
-We are using Twilio service to send the SMS when an alert is raised. Twilio's Node.js has been incorporate in our application. 
+We are using Twilio service to send the SMS when an alert is raised. Twilio's dependency was added to the package.json file. 
 For the metrics, we chose the below two criteria:
 
-1. CPU usage - Alert would be triggered when the code detects a spike in CPU usage above 50%
+1. CPU usage - Alert would be triggered when the code detects a spike in CPU usage above 60%
 2. High memory usage -  Alert would be triggered on high memory usage exceeding a predefined threshold of 90%.
-   
+
+Our file alert.js monitors the service and sends an alert message on phone as well as a console output.
+
+Screencast for alert message
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/3_1.gif)
+
+Alerts recieved on phone
 ![Screenshot](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/3_2.jpg)
 
 #### The ability to autoscale individual components of production and maintain and track in a central discovery service. Autoscale can be triggered by a predefined rule.
@@ -99,7 +104,7 @@ node <filename.js>
 node proxy.js
 ```
 
-3. We route the traffi as 67% to stable server and 33% to canary. Simply, every 3rd request is sent the Canary server.
+3. We route the traffic as 67% to stable server and 33% to canary. Simply, every 3rd request is sent the Canary server.
 4. We use CPU memory usage to trigger alert and stopping the canary. When the limit exceeds the utlization of 85%, the requests to canary are stopped and all further requests are only sent to production.
 
 Screencast for traffic routing
