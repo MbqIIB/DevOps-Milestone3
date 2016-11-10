@@ -73,11 +73,11 @@ ansible-playbook -i inventory playbook.yml
 We are using Twilio service to send the SMS when an alert is raised. Twilio's Node.js has been incorporate in our application. 
 For the metrics, we chose the below two criteria:
 
-1. CPU usage - Alert would be triggered when the code detects a spike in CPU usage above 60%
+1. CPU usage - Alert would be triggered when the code detects a spike in CPU usage above 50%
 2. High memory usage -  Alert would be triggered on high memory usage exceeding a predefined threshold of 90%.
    
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/3_1.gif)
-![Screenshot](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/3_2.jpeg)
+![Screenshot](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/3_2.jpg)
 
 #### The ability to autoscale individual components of production and maintain and track in a central discovery service. Autoscale can be triggered by a predefined rule.
    
