@@ -12,7 +12,7 @@ Additions tools used: ???
 
 We used the MIT licensed Climbing-Grade project which is forked at 
 ```
-https://github.com/shivamgulati1991/climbing-grade
+https://github.com/shivamgulati1991/m3base
 ```
 As a service provider, we have used Digital Ocean and set up droplets for following:
 
