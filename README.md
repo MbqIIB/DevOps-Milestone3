@@ -100,8 +100,8 @@ Alerts recieved on phone
 
 ### The ability to autoscale individual components of production and maintain and track in a central discovery service. Autoscale can be triggered by a predefined rule.
    
-1. We are performing horizonal scaling on the server. 
-2. We chose memory usage as the parameter, when it is more than 50%, the server scales by doubling the memory.
+1. We are performing vertical scaling on the server. 
+2. We chose memory usage as the parameter, when it is more than 50%, the server scales by doubling the memory of the droplet.
 3. The same is run from the file scale.js
 3. We can track the same and usage in the digital ocean web's dashboard.
 
