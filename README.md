@@ -103,7 +103,7 @@ Alerts recieved on phone
    
 1. We are performing horizonal scaling on the server. 
 2. We chose memory usage as the parameter, when it is more than 50%, the server scales by doubling the memory.
-3. The same is run from the file alert.js
+3. The same is run from the file scale.js
 3. We can track the same and usage in the digital ocean web's dashboard.
 
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/4.gif)
