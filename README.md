@@ -60,7 +60,7 @@ EOF
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/1.gif)
 
 
-### The ability to configure a production environment automatically, including all infrastructure components, such web server, app service, load balancers, and redis stores. Configure should be accopmlished by using a configuration management tool, such as ansible, or docker. Alternatively, a cluster management approach could also work (e.g., kubernates).
+### The ability to configure a production environment automatically, including all infrastructure components, such web server, app service, load balancers, and redis stores. Configure should be accomplished by using a configuration management tool, such as ansible, or docker. Alternatively, a cluster management approach could also work (e.g., kubernates).
 
 For this we used the learning from homeworks and workshops, and setup the environment automatically using script to create Digital Ocean droplet and installing dependencies and requirements using Ansible playbook. The steps we followed:
 
