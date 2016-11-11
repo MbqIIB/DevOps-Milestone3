@@ -30,7 +30,7 @@ As a service provider, we have used Digital Ocean and set up droplets for follow
 5. Test run a build - Go to Jobs and click "Build Now". 
 
 
-#### The ability to deploy software to the production environment triggered after build, testing, and analysis stage is completed. The deployment needs to occur on actual remote machine/VM (e.g. AWS, droplet, VCL), and not a local VM.
+### The ability to deploy software to the production environment triggered after build, testing, and analysis stage is completed. The deployment needs to occur on actual remote machine/VM (e.g. AWS, droplet, VCL), and not a local VM.
 
 We used Digital Ocean droplets for this task. Droplet 1 maintains the Jenkins build server and droplet 2 has the production environment.
 
@@ -60,7 +60,7 @@ EOF
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/1.gif)
 
 
-#### The ability to configure a production environment automatically, including all infrastructure components, such web server, app service, load balancers, and redis stores. Configure should be accopmlished by using a configuration management tool, such as ansible, or docker. Alternatively, a cluster management approach could also work (e.g., kubernates).
+### The ability to configure a production environment automatically, including all infrastructure components, such web server, app service, load balancers, and redis stores. Configure should be accopmlished by using a configuration management tool, such as ansible, or docker. Alternatively, a cluster management approach could also work (e.g., kubernates).
 
 For this we used the learning from homeworks and workshops, and setup the environment automatically using script to create Digital Ocean droplet and installing dependencies and requirements using Ansible playbook. The steps we followed:
 
@@ -80,7 +80,7 @@ ansible-playbook -i inventory playbook.yml
    
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/2.gif)
 
-#### The ability to monitor the deployed application (using at least 2 metrics) and send alerts using email or SMS (e.g., smtp, mandrill, twilio). An alert can be sent based on some predefined rule.  
+### The ability to monitor the deployed application (using at least 2 metrics) and send alerts using email or SMS (e.g., smtp, mandrill, twilio). An alert can be sent based on some predefined rule.  
 
 We are using Twilio service to send the SMS when an alert is raised. Twilio's dependency was added to the package.json file. 
 For the metrics, we chose the below two criteria:
@@ -98,7 +98,7 @@ Alerts recieved on phone
 
 ![Screenshot](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/3_2.jpg)
 
-#### The ability to autoscale individual components of production and maintain and track in a central discovery service. Autoscale can be triggered by a predefined rule.
+### The ability to autoscale individual components of production and maintain and track in a central discovery service. Autoscale can be triggered by a predefined rule.
    
 1. We are performing horizonal scaling on the server. 
 2. We chose memory usage as the parameter, when it is more than 50%, the server scales by doubling the memory.
@@ -107,7 +107,7 @@ Alerts recieved on phone
 
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/4.gif)
 
-#### The ability to use feature flags, serviced by a global redis store, to toggle functionality of a deployed feature in production.
+### The ability to use feature flags, serviced by a global redis store, to toggle functionality of a deployed feature in production.
 
 We used a redis-key value server as a global store to maintain the feature flag. This feature can be enabled or disabled using the redis-cli.
 
@@ -126,7 +126,7 @@ SET mykey OFF
 
 ![Screencast](https://github.com/shivamgulati1991/DevOps-Milestone3/blob/master/Screens/5.gif)
 
-#### The ability to perform a canary release: Using a proxy/load balancer server, route a percentage of traffic to a newly staged version of software and remaining traffic to a stable version of software. Stop routing traffic to canary if alert is raised.
+### The ability to perform a canary release: Using a proxy/load balancer server, route a percentage of traffic to a newly staged version of software and remaining traffic to a stable version of software. Stop routing traffic to canary if alert is raised.
 
 1. We run the main code on a droplet.
 ```
