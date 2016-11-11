@@ -6,7 +6,7 @@ Team Members:
 2. Nishtha Garg - ngarg@ncsu.edu
 3. Shivam Gulati - sgulati2@ncsu.edu
 
-We have used Jenkins to configure the build server. Alongwith Jenkins, we have used Tomcat, Git for Source Code Management and NPM as a package manager.
+We have used Jenkins to configure the build server. Alongwith Jenkins, we have used Tomcat, Git for Source Code Management and NPM as a package manager and various libraries and depedencies as part of package.json.
 
 The project used for the milestone is at
 
